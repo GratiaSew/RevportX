@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Join Our Team</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    body{
+        margin: 0%;
+        font-family: ingra-condensed,sans-serif;
+        font-size: 14px;
+        line-height: 1.42857143;    
+        color: #333;
+    }
+    .logo{
+        height: 50%;
+        width: 50%;
+    }
+    #leftHalf {
+        background: url(../Images/financial-background.jpg);
+        background-attachment: fixed;
+        width: 60%;
+        position: absolute;
+        height: 100%;
+    }
+    #rightHalf {
+        width: 40%;
+        position: absolute;
+        right: 0%;
+        height: 100%;
+    }
+    * {
+        box-sizing: border-box;
+    }
+    input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+    }
+    label {
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+    }
+    input[type=submit] {
+        /* background-color: #4CAF50; */
+        /* color: white; */
+        color: black;
+        /* padding: 12px 20px; */
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+    }
+    input[type=submit]:hover {
+        cursor: pointer;
+    }
+    .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        height: 100%;
+    }
+    .col-25 {
+        float: left;
+        width: 25%;
+        margin-top: 6px;
+    }
+    .col-75 {
+        float: left;
+        width: 75%;
+        margin-top: 6px;
+    }
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+        .col-25, .col-75, input[type=submit] {
+            width: 100%;
+            margin-top: 0;
+        }
+    }
+    .resumeUpload{
+        display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    }
+    .test{
+        display: block;
+    width: 100%;
+    height: 45px;
+    line-height: 1.42857;
+    color: #888;
+    background-color: transparent;
+    background-image: none;
+    border-top-width: initial;
+    border-right-width: initial;
+    border-left-width: initial;
+    border-top-color: initial;
+    border-right-color: initial;
+    border-left-color: initial;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    box-shadow: none;
+    padding: 6px 12px;
+    border-style: none none solid;
+    border-bottom: 1px solid #252a2e;
+    border-radius: 0;
+    border-bottom: 1px solid #c3c3c3!important;
+    box-shadow: inset 0 0 0 rgba(0,0,0,.075),0 0 0 #252a2e!important;
+    }
+
+</style>
+<script src="https://www.google.com/recaptcha/api.js"></script>
+</head>
+<body>
+    <div id="leftHalf">
+        <div>
+            <img class="logo" src = "../Images/revportlogo.png">
+        </div>
+    </div>
+    <div id="rightHalf">
+        <div class="container">
+            <div style="text-align: center; font-size: 24px;"><b>Join Our Team</b></div>
+            <form action="/action_page.php">
+                <div class="row">
+                    <div class="col-25"></div>
+                    <div class="col-75">
+                        <input class="test" type="text" required id="fullName" name="fullName" placeholder="+ Full Name..">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25"></div>
+                    <div class="col-75">
+                        <textarea class="test" id="address" required name="address" placeholder="+ Address" style="height: 40px"></textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25"></div>
+                    <div class="col-75">
+                        <input class="test" type="text" required id="email" name="email" placeholder="+ Email">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25"></div>
+                    <div class="col-75">
+                        <input class="test" type="text" required id="mobileNumber" name="mobileNumber" placeholder="+ Mobile Phone Number">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25"></div>
+                    <div class="col-75">
+                        <select required>
+                            <option value="applicationType">+ Type of Application</option>
+                            <option value="graduate">Graduate</option>
+                            <option value="experiencedProfessional">Experienced Professional</option>
+                            <option value="inturnship">InturnShip</option>
+                            <option value="inturnship">Non Professional/ trainee /Fresher Level</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-25"></div>
+                    <div class="col-75">
+                        <select required>
+                            <option value="jobArea">+ Interested Job Area</option>
+                            <option value="hr">Human Resourse</option>
+                            <option value="sales">Sales</option>
+                            <option value="inturnship">InturnShip</option>
+                            <option value="inturnship">Non Professional/ trainee /Fresher Level</option>
+                        </select>
+                    </div>
+                </div><br>
+
+                <div class="row">
+                    <input class="resumeUpload" type="submit" value="Upload Resume">
+                </div><br>
+
+                <div class="g-recaptcha" data-sitekey="6Ldbdg0TAAAAAI7KAf72Q6uagbWzWecTeBWmrCpJ"></div><br>
+
+                <div class="row">
+                    <input class="resumeUpload submitBtn" type="submit" value="Submit">
+                </div><br>
+
+                <div>
+                    <a href="#" style="font-size: 20px; color: #0D47A1; font-family: Helvetica Neue,Helvetica,Arial,sans-serif;" >Back To Previous Page</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html> 
